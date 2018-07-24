@@ -23,6 +23,6 @@ ADD etc/supervisord.conf /etc/supervisord.conf
 ADD etc/fpm-www.conf /etc/php7/php-fpm.d/www.conf
 ADD etc/nginx.conf /etc/nginx/nginx.conf
 
-RUN mkdir /var/nginx
+RUN mkdir /run/nginx
 
 CMD ["supervisord"]
