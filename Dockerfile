@@ -2,7 +2,7 @@ FROM alpine:edge
 
 MAINTAINER Chuanjian Wang <chuanjian@funxdata.com>
 
-RUN addgroup -S www \
+RUN addgroup -S www ;\
 	adduser -D -S -h /var/cache/nginx -s /sbin/nologin -G www www
 
 RUN apk add --update --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing \
