@@ -2,9 +2,6 @@ FROM alpine:edge
 
 MAINTAINER Chuanjian Wang <chuanjian@funxdata.com>
 
-RUN addgroup -S www ;\
-	adduser -D -S -h /var/cache/nginx -s /sbin/nologin -G www www
-
 RUN apk add --update --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing \
 	bash \
 	nginx \
@@ -20,6 +17,10 @@ RUN apk add --update --no-cache --repository http://dl-3.alpinelinux.org/alpine/
 	php7-uuid \
 	php7-oauth \
 	php7-mcrypt \
+	php7-pdo \
+	php7-pdo_dblib \
+	php7-pdo_mysql \
+	php7-pdo_pgsql \
 	supervisor
 
 ADD etc/supervisord.conf /etc/supervisord.conf
