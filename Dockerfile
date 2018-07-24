@@ -13,6 +13,7 @@ RUN apk add --update --no-cache --repository http://dl-3.alpinelinux.org/alpine/
 	php7-pgsql \
 	php7-openssl \
 	php7-iconv \
+	php7-json \
 	php7-protobuf \
 	php7-uuid \
 	php7-oauth \
