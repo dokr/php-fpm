@@ -2,7 +2,8 @@ FROM alpine:edge
 
 MAINTAINER Chuanjian Wang <chuanjian@funxdata.com>
 
-RUN apk add --update bash \
+RUN apk add --update --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing \
+	bash \
 	nginx \
 	php7 \
 	php7-common \
