@@ -2,7 +2,10 @@ FROM alpine:edge
 
 MAINTAINER Chuanjian Wang <chuanjian@funxdata.com>
 
+ENV TZ=Asia/Shanghai
 RUN apk add --update --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing \
+	ca-certificates \
+	tzdata \
 	bash \
 	nginx \
 	php7 \
@@ -22,6 +25,7 @@ RUN apk add --update --no-cache --repository http://dl-3.alpinelinux.org/alpine/
 	php7-pdo_dblib \
 	php7-pdo_mysql \
 	php7-pdo_pgsql \
+	composer \
 	supervisor
 
 ADD etc/supervisord.conf /etc/supervisord.conf
