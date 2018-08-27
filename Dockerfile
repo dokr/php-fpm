@@ -3,10 +3,12 @@ FROM alpine:edge
 MAINTAINER Chuanjian Wang <chuanjian@funxdata.com>
 
 ENV TZ=Asia/Shanghai
+ENV LD_PRELOAD=/usr/lib/preloadable_libiconv.so php
 RUN apk add --update --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing \
+	bash \
 	ca-certificates \
 	tzdata \
-	bash \
+	gnu-libiconv \
 	nginx \
 	php7 \
 	php7-common \
