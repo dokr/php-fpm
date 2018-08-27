@@ -22,6 +22,7 @@ RUN apk add --update --no-cache --repository http://dl-3.alpinelinux.org/alpine/
 	php7-oauth \
 	php7-mcrypt \
 	php7-pdo \
+	php7-ctype \
 	php7-pdo_dblib \
 	php7-pdo_mysql \
 	php7-pdo_pgsql \
