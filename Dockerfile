@@ -10,22 +10,25 @@ RUN apk add --update --no-cache --repository http://dl-3.alpinelinux.org/alpine/
 	nginx \
 	php7 \
 	php7-common \
+	php7-ctype \
+	php7-curl \
 	php7-fpm \
-	php7-mysqli \
-	php7-redis \
-	php7-pgsql \
-	php7-openssl \
 	php7-iconv \
 	php7-json \
-	php7-protobuf \
-	php7-uuid \
-	php7-oauth \
 	php7-mcrypt \
+	php7-mysqli \
+	php7-oauth \
+	php7-openssl \
+	php7-pgsql \
+	php7-protobuf \
 	php7-pdo \
-	php7-ctype \
 	php7-pdo_dblib \
 	php7-pdo_mysql \
 	php7-pdo_pgsql \
+	php7-redis \
+	php7-uuid \
+	php7-xml \
+	php7-xsl \
 	composer \
 	supervisor
 
