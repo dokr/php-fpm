@@ -3,7 +3,7 @@ FROM alpine:edge
 MAINTAINER Chuanjian Wang <chuanjian@funxdata.com>
 
 ENV TZ=Asia/Shanghai
-ENV LD_PRELOAD=/usr/lib/preloadable_libiconv.so php
+ENV LD_PRELOAD=/usr/lib/preloadable_libiconv.so
 RUN apk add --update --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing \
 	bash \
 	ca-certificates \
