@@ -19,6 +19,7 @@ RUN apk add --update --no-cache \
 	php7-mcrypt \
 	php7-mysqli \
 	php7-oauth \
+	php7-opcache \
 	php7-openssl \
 	php7-pgsql \
 	php7-pdo \
