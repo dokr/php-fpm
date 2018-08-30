@@ -1,14 +1,13 @@
-FROM alpine:edge
+FROM alpine:3.8
 
 MAINTAINER Chuanjian Wang <chuanjian@funxdata.com>
 
 ENV TZ=Asia/Shanghai
 ENV LD_PRELOAD=/usr/lib/preloadable_libiconv.so
-RUN apk add --update --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing \
+RUN apk add --update --no-cache \
 	bash \
 	ca-certificates \
 	tzdata \
-	gnu-libiconv \
 	nginx \
 	php7 \
 	php7-common \
@@ -22,17 +21,21 @@ RUN apk add --update --no-cache --repository http://dl-3.alpinelinux.org/alpine/
 	php7-oauth \
 	php7-openssl \
 	php7-pgsql \
-	php7-protobuf \
 	php7-pdo \
 	php7-pdo_dblib \
 	php7-pdo_mysql \
 	php7-pdo_pgsql \
 	php7-redis \
-	php7-uuid \
+	php7-simplexml \
 	php7-xml \
 	php7-xsl \
 	composer \
 	supervisor
+
+RUN apk add --update --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing \
+	gnu-libiconv \
+	php7-protobuf \
+	php7-uuid
 
 ADD etc/supervisord.conf /etc/supervisord.conf
 ADD etc/fpm-www.conf /etc/php7/php-fpm.d/www.conf
