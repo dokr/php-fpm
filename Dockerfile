@@ -30,6 +30,7 @@ RUN apk add --update --no-cache \
 	php7-simplexml \
 	php7-xml \
 	php7-xsl \
+	php7-zip \
 	composer \
 	supervisor
 
