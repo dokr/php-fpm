@@ -4,5 +4,5 @@ MAINTAINER Chuanjian Wang <chuanjian@funxdata.com>
 
 RUN apk add --update php7-xdebug wget
 
-RUN wget http://phar.phpunit.cn/phpunit.phar -o /usr/local/bin/phpunit.phar \
+RUN wget http://phar.phpunit.cn/phpunit.phar -o /usr/local/bin/phpunit.phar ;\
 	chmod +x /usr/local/bin/phpunit.phar
