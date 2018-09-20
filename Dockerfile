@@ -29,6 +29,7 @@ RUN apk add --update --no-cache \
 	php7-redis \
 	php7-simplexml \
 	php7-xml \
+	php7-xmlrpc \
 	php7-xsl \
 	php7-zip \
 	composer \
