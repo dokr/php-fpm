@@ -16,6 +16,7 @@ RUN apk add --update --no-cache \
 	php7-fpm \
 	php7-iconv \
 	php7-json \
+	php7-mbstring \
 	php7-mcrypt \
 	php7-mysqli \
 	php7-oauth \
@@ -28,6 +29,7 @@ RUN apk add --update --no-cache \
 	php7-pdo_pgsql \
 	php7-redis \
 	php7-simplexml \
+	php7-tokenizer \
 	php7-xml \
 	php7-xmlreader \
 	php7-xmlrpc \
@@ -36,6 +38,7 @@ RUN apk add --update --no-cache \
 	php7-zip \
 	composer \
 	supervisor
+
 
 RUN apk add --update --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing \
 	gnu-libiconv \
