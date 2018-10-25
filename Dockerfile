@@ -50,7 +50,8 @@ RUN apk add --update --no-cache --repository http://dl-3.alpinelinux.org/alpine/
 ADD etc/supervisord.conf /etc/supervisord.conf
 ADD etc/fpm-www.conf /etc/php7/php-fpm.d/www.conf
 ADD etc/nginx.conf /etc/nginx/nginx.conf
-ADD etc/php-fpm.conf /etc/php7/php-fpm.conf 
+ADD etc/php-fpm.conf /etc/php7/php-fpm.conf
+ADD etc/php.ini /etc/php.ini
 
 RUN mkdir /run/nginx
 
