@@ -10,6 +10,7 @@ RUN apk add --update --no-cache \
 	tzdata \
 	nginx \
 	php7 \
+	php7-bcmath \
 	php7-common \
 	php7-ctype \
 	php7-curl \
