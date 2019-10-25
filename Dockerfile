@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM alpine:3.10
 
 MAINTAINER Chuanjian Wang <chuanjian@funxdata.com>
 
