@@ -30,6 +30,7 @@ RUN apk add --update --no-cache \
 	php7-pdo_dblib \
 	php7-pdo_mysql \
 	php7-pdo_pgsql \
+	php7-posix \
 	php7-redis \
 	php7-simplexml \
 	php7-tokenizer \
